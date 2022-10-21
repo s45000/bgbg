@@ -1,0 +1,143 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+
+body{
+    background-image: url(camera-1944039.jpg);
+}
+
+.settingForm{
+    border: 2px solid skyblue;
+    position: absolute;
+    width: 300px;
+    height: 420px;
+    padding: 30px, 20px;
+    background-color: white;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    margin-bottom: 10px;
+     
+}
+
+.settingForm h2{
+    text-align: center;
+    margin: 20px;
+    transform:rotate(-0.03deg);
+}
+
+.information{
+    text-align: left;
+    margin: 25px;
+    color: gray;
+    font-size: 18px;
+    font-weight: bold;
+    transform:rotate(-0.03deg);
+}
+
+.ruleNtext{
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid gray;
+    margin: 10px;
+    padding: 5px 5px;
+    color: gray;
+}
+
+.ruleN{
+    position: relative;
+    margin-bottom: 10px;
+    width: 40px;
+    height: 40px;
+    background: skyblue;
+    background-position: left;
+    background-size: 200%;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: 0.4s;
+    display: inline;
+    border-radius: 20px;
+}
+
+.noticetext{
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid gray;
+    margin: 10px;
+    padding: 5px 5px;
+    color: gray;
+}
+
+.notice{
+    position: relative;
+    margin-bottom: 10px;
+    width: 40px;
+    height: 40px;
+    background: skyblue;
+    background-position: left;
+    background-size: 200%;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: 0.4s;
+    display: inline;
+    border-radius: 20px;
+}
+.ruleNForm {
+    text-align: center;
+    text-indent: -10px;
+    font-size: 18px;
+    transform:rotate(-0.03deg);
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.noticeForm{
+    text-align: center;
+    text-indent: -10px;
+    font-size: 18px;
+    transform:rotate(-0.03deg);
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.print{
+    position: relative;
+    margin-bottom: 10px;
+    width: 160px;
+    height: 20px;
+    background: skyblue;
+    background-position: left;
+    background-size: 200%;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: 0.4s;
+    display: inline;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.back{
+    top: 20px;
+    position: relative;
+    margin-bottom: 10px;
+    width: 160px;
+    height: 20px;
+    background-position: left;
+    background-size: 200%;
+    color: black;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: 0.4s;
+    display: inline;
+    border-radius: 5px;
+    font-size: 14px;
+}

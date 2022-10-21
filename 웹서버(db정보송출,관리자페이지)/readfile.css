@@ -1,0 +1,25 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+
+body{
+    background-image: url(camera-1944039.jpg);
+}
+
+.settingForm{
+    border: 2px solid skyblue;
+    position: absolute;
+    width: 720px;
+    height: 720px;
+    padding: 30px, 20px;
+    background-color: white;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    margin-bottom: 10px; 
+}
+

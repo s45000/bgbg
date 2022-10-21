@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCTV</title>
+    <link rel="stylesheet" href="CCTVPage.css">
+</head>
+<body>
+    
+    <div class="container">
+    <iframe width="1280px" height="720px" src="https://www.youtube.com/embed/hGvwmKMP9-0?start=254">테스트</iframe>
+    </div>
+    <div style="text-align: center;">
+        <span id="clock" style="color:skyblue; font-size: 75px;">clock</span>
+    </div>
+    <script>
+        var Target = document.getElementById("clock");
+        var Target_apm = document.getElementById("apm");
+        function clock() {
+            var time = new Date();
+            var hours = time.getHours();
+            var minutes = time.getMinutes();
+            var seconds = time.getSeconds();
+            
+            Target.innerText = 
+            `${hours < 10 ? `0${hours}` : hours}:${minutes < 10 ? `0${minutes}` : minutes}:${seconds < 10 ? `0${seconds}` : seconds}`;
+
+        }
+        clock();
+        setInterval(clock, 1000);
+    </script>
+</body>
+</html>
