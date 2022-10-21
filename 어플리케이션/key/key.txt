@@ -1,0 +1,75 @@
+sha1
+11:3B:BE:DA:9A:86:84:D0:7B:21:61:EA:6E:10:F0:F6:75:0F:D3:3E
+
+
+API key
+AIzaSyByQoBcdoFdNC7BUacJc1XXr1xMaBiiDV4
+
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlayActivity">
+
+    <TextView
+        android:id="@+id/announcement"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:gravity="center_horizontal"
+        android:text="@string/search_administrative_section"
+        android:textColor= "#707070"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    
+    <EditText
+        android:id="@+id/searchWhere"
+        android:layout_width="270dp"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:maxLength="17"
+        android:gravity="center_vertical|right"
+        android:hint="@string/HowToSearch"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toStartOf="@id/searchButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/announcement" />
+
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:text="@string/search"
+        app:layout_constraintTop_toBottomOf="@id/announcement"
+        app:layout_constraintStart_toEndOf="@id/searchWhere"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/warningText"
+        android:layout_width="match_parent"
+        android:layout_height="27dp"
+        android:gravity="center_horizontal"
+        android:text="@string/Warning"
+        android:textColor="#707070"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/searchWhere"
+        tools:ignore="MissingConstraints" />
+
+    <ListView
+        android:id="@+id/resultArea"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="00dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/warningText"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

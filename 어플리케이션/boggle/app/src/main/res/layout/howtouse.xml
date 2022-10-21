@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/FirstText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:text="행정구역을 검색하거나 지도를 움직여 보세요!"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <ImageView
+        android:id="@+id/SecondImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/green"
+        app:layout_constraintTop_toBottomOf="@id/FirstText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/SecondText"/>
+    <TextView
+        android:id="@+id/SecondText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:text=" : 한산하다."
+        app:layout_constraintStart_toEndOf="@id/SecondImage"
+        app:layout_constraintBottom_toBottomOf="@id/SecondImage"/>
+    <ImageView
+        android:id="@+id/ThirdImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/yellow"
+        app:layout_constraintTop_toBottomOf="@id/SecondImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/ThirdText"/>
+    <TextView
+        android:id="@+id/ThirdText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:text=" : 약간 붐빈다."
+        app:layout_constraintStart_toEndOf="@id/ThirdImage"
+        app:layout_constraintBottom_toBottomOf="@id/ThirdImage"/>
+    <ImageView
+        android:id="@+id/FourthImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/red"
+        app:layout_constraintTop_toBottomOf="@id/ThirdImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/FourthText"/>
+    <TextView
+        android:id="@+id/FourthText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:text=" : 바글바글하다."
+        app:layout_constraintStart_toEndOf="@id/FourthImage"
+        app:layout_constraintBottom_toBottomOf="@id/FourthImage"/>
+    <TextView
+        android:id="@+id/FivthText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:text=" 마커를 클릭해 간단한 정보창을 확인하고\n
+상세한 정보를 보고싶으면 정보창을 클릭하세요!\n
+우측상단의 리스트 버튼을 누르면\n
+리스트 형식으로도 확인하실 수 있습니다."
+        app:layout_constraintTop_toBottomOf="@id/FourthText"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

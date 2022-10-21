@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgbgbg2"
+    tools:context=".PlayActivity">
+
+    <TextView
+        android:id="@+id/announcement"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="@string/search_administrative_section"
+        android:gravity="center"
+        android:textColor= "#707070"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toStartOf="@id/mapButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/mapButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#707070"
+        android:src="@drawable/map"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/searchWhere"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:maxLength="17"
+        android:hint="@string/HowToSearch"
+        android:gravity="center"
+        android:textColorHint="#9A9595"
+        android:textColor="@android:color/black"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toStartOf="@id/searchButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/announcement" />
+
+    <ImageButton
+        android:id="@+id/searchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#707070"
+        android:src="@drawable/search2"
+        app:layout_constraintTop_toBottomOf="@id/mapButton"
+        app:layout_constraintStart_toEndOf="@id/searchWhere" />
+
+    <TextView
+        android:id="@+id/warningText"
+        android:layout_width="match_parent"
+        android:layout_height="27dp"
+        android:gravity="center_horizontal"
+        android:text="@string/Warning"
+        android:textColor="#9A9595"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/searchWhere"
+        tools:ignore="MissingConstraints" />
+
+    <ListView
+        android:id="@+id/resultArea"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="00dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/warningText"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+    <Button
+        android:id="@+id/refresh"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:textSize="20dp"
+        android:text="Re"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

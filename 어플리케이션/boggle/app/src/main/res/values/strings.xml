@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">boggle</string>
+    <string name="appName">바글바글</string>
+    <string name="touchAnything">아무곳이나 터치하세요</string>
+    <string name="HowToSearch">ex) xx도 yy군 zz구 or xx시 oo구</string>
+    <string name="search">search</string>
+    <string name="search_administrative_section">Search Administrative Section</string>
+    <string name="Warning">Do not rely too much on the app ^.^</string>
+    <string name="to_map">to Map</string>
+</resources>
