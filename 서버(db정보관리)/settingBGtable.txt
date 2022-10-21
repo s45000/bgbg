@@ -1,0 +1,17 @@
+create table BGtable(
+	doh varchar(10),
+	si varchar(10),
+	gun varchar(10),
+	gu varchar(10),
+	place varchar(30) not NULL,
+	nowN int(11) not NULL,
+	ruleN int(11) not NULL,
+	updateTime datetime on update current_timestamp(),
+	notice varchar(40),
+	lat double,
+	lng double,
+	videoLink varchar(40),
+	isActive tinyint(1) default 0,
+	id varchar(20),
+	pw varchar(20)
+);
