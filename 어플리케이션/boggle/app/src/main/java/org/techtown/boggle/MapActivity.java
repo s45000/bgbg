@@ -221,7 +221,6 @@ public class MapActivity extends FragmentActivity implements OnMapReadyCallback 
         // ↑매개변수로 GoogleMap 객체가 넘어옵니다.
         // 전역변수에 구글맵 대입
         map = googleMap;
-        // camera 좌표를 경동대 근처로 옮겨 봅니다.
         // 구글지도(지구) 에서의 zoom 레벨은 1~23 까지 가능합니다.
         // 여러가지 zoom 레벨은 직접 테스트해보세요
         googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(
